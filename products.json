@@ -1,0 +1,529 @@
+{
+  "updated": "2026-10-01",
+
+  "categories": [
+    { "id": "olive",        "name": "Оливковое масло" },
+    { "id": "black-cumin",  "name": "Масло чёрного тмина" },
+    { "id": "cold-pressed", "name": "Сыродавленные масла" },
+    { "id": "vinegar",      "name": "Уксус" },
+    { "id": "soap",         "name": "Мыло" },
+    { "id": "health",       "name": "Здоровое питание" }
+  ],
+
+  "products": [
+
+    {
+      "id": "olive-les-sorts",
+      "name": "Оливковое масло «Les sorts»",
+      "brand": "HASAN oil",
+      "category": "olive",
+      "volumes": [
+        { "size": "250 мл", "price": 1000 },
+        { "size": "500 мл", "price": null }
+      ],
+      "description": "Extra Virgin, первый холодный отжим, кислотность 0,2%. Испания.",
+      "details": "100% натуральное оливковое масло высшей категории Extra Virgin. Получено методом первого холодного отжима, кислотность — 0,2%. Мягкий, сбалансированный вкус с фруктовыми нотами. Произведено в Испании, разлито под маркой HASAN oil.",
+      "usage": "Для салатов и заправок, к хлебу и сыру, в готовые блюда. Подходит для запекания и тушения.",
+      "country": "Испания",
+      "photos": [
+        "photos/olive-les-sorts-1.webp",
+        "photos/olive-les-sorts-2.webp",
+        "photos/olive-les-sorts-3.webp",
+        "photos/olive-les-sorts-4.webp",
+        "photos/olive-les-sorts-5.webp"
+      ],
+      "available": true,
+      "featured": true
+    },
+
+    {
+      "id": "olive-ester-sole",
+      "name": "Оливковое масло «Ester Solé»",
+      "brand": "Olis Solé",
+      "category": "olive",
+      "volumes": [
+        { "size": "1 л, стекло", "price": null },
+        { "size": "2 л", "price": null },
+        { "size": "5 л", "price": null }
+      ],
+      "description": "Extra Virgin из оливок сорта Arbequina, DOP Siurana. Испания.",
+      "details": "Оливковое масло Extra Virgin из оливок сорта Arbequina с защищённым наименованием происхождения DOP Siurana (Каталония). Семейное производство Olis Solé с 1825 года. Мягкий, сладковатый вкус, типичный для арбекины. Большие объёмы удобны для семьи и ежедневной готовки.",
+      "usage": "Для салатов, заправок, жарки, запекания и выпечки.",
+      "country": "Испания",
+      "photos": [
+        "photos/ester-sole-1.webp",
+        "photos/ester-sole-2.webp",
+        "photos/ester-sole-3.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "olive-mas-tarres",
+      "name": "Оливковое масло «Mas Tarrés»",
+      "brand": "Olis Solé",
+      "category": "olive",
+      "volumes": [
+        { "size": "500 мл", "price": null }
+      ],
+      "description": "Extra Virgin из оливок сорта Arbequina, DOP Siurana. Испания.",
+      "details": "Оливковое масло Extra Virgin от семейного производителя Olis Solé. Сорт Arbequina, защищённое наименование происхождения DOP Siurana. Нежный фруктовый аромат и мягкий вкус.",
+      "usage": "Для салатов, заправок, брускетт и готовых блюд.",
+      "country": "Испания",
+      "photos": [
+        "photos/mas-tarres-oil-1.webp",
+        "photos/mas-tarres-oil-2.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "black-cumin-baraka",
+      "name": "Масло чёрного тмина «Baraka»",
+      "brand": "HASAN oil",
+      "category": "black-cumin",
+      "volumes": [
+        { "size": "250 мл", "price": 3400 },
+        { "size": "500 мл", "price": null }
+      ],
+      "description": "Индийские семена, первый холодный отжим, без примесей. Halal & Vegan.",
+      "details": "100% чистое масло чёрного тмина из индийских семян, без примесей. Первый холодный отжим. Насыщенный пряный вкус с характерной горчинкой. Halal & Vegan. Произведено в Шри-Ланке.",
+      "usage": "Добавляйте в салаты, соусы и заправки, к хлебу и мёду. Не подходит для жарки. Используется в уходе за кожей и волосами.",
+      "country": "Шри-Ланка",
+      "photos": [
+        "photos/black-cumin-baraka-1.webp",
+        "photos/black-cumin-baraka-2.webp"
+      ],
+      "available": true,
+      "featured": true
+    },
+
+    {
+      "id": "black-cumin-light",
+      "name": "Тминное масло из индийских семян",
+      "brand": "HASAN oil",
+      "category": "black-cumin",
+      "volumes": [
+        { "size": "250 мл", "price": null }
+      ],
+      "description": "Масло чёрного тмина из индийских семян. Светлая этикетка.",
+      "details": "Масло чёрного тмина из индийских семян в бутылке 250 мл со светлой этикеткой. Пряный, слегка горьковатый вкус.",
+      "usage": "Добавляйте в салаты, соусы и заправки. Не подходит для жарки. Используется в уходе за кожей и волосами.",
+      "country": null,
+      "photos": [
+        "photos/cumin-light-1.webp",
+        "photos/cumin-light-2.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "black-cumin-quran",
+      "name": "Тминное масло, начитанное Кораном",
+      "brand": "HASAN oil",
+      "category": "black-cumin",
+      "volumes": [
+        { "size": "250 мл", "price": null }
+      ],
+      "description": "Масло чёрного тмина из индийских семян, начитанное Кораном.",
+      "details": "Масло чёрного тмина из индийских семян, начитанное Кораном. Бутылка 250 мл. Пряный, слегка горьковатый вкус.",
+      "usage": "Добавляйте в салаты, соусы и заправки. Не подходит для жарки. Используется в уходе за кожей и волосами.",
+      "country": null,
+      "photos": [
+        "photos/cumin-quran-1.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "baraka-omega-3",
+      "name": "Baraka Omega 3",
+      "brand": "Baraka",
+      "category": "black-cumin",
+      "volumes": [
+        { "size": "90 капсул", "price": null }
+      ],
+      "description": "Масло чёрного тмина и рыбий жир в капсулах.",
+      "details": "Капсулы с маслом чёрного тмина и рыбьим жиром (масло печени трески). Оболочка капсулы — желатин. В упаковке 90 капсул. Вкус нейтральный.",
+      "usage": "Перед применением ознакомьтесь с информацией на упаковке.",
+      "note": "Не является лекарственным средством.",
+      "country": null,
+      "photos": [
+        "photos/omega3-1.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "milk-thistle",
+      "name": "Масло расторопши",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 2200 }
+      ],
+      "description": "Сыродавленное масло из семян расторопши.",
+      "details": "Масло из семян расторопши, полученное холодным отжимом. Мягкий травянистый вкус и аромат.",
+      "usage": "Для заправки салатов и каш, в готовые блюда. Не нагревать.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "cedar-nut",
+      "name": "Масло кедрового ореха",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 2400 }
+      ],
+      "description": "Сыродавленное масло с нежным ореховым вкусом.",
+      "details": "Масло из ядер кедрового ореха, полученное холодным отжимом. Нежный ореховый вкус с лёгкой сладостью.",
+      "usage": "Для салатов, каш и десертов. Используется в уходе за кожей.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "almond",
+      "name": "Масло миндальное",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 1600 }
+      ],
+      "description": "Сыродавленное масло с деликатным миндальным ароматом.",
+      "details": "Масло из ядер миндаля, полученное холодным отжимом. Деликатный вкус и аромат миндаля.",
+      "usage": "Для салатов и десертов. В уходе за кожей и волосами, для массажа.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "pumpkin",
+      "name": "Масло тыквенное",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 2100 }
+      ],
+      "description": "Сыродавленное, отжато на дубовом прессе. Насыщенный ореховый вкус.",
+      "details": "Масло из семян тыквы первого холодного отжима, отжато на дубовом прессе. Тёмный цвет, насыщенный ореховый вкус и аромат тыквенных семечек.",
+      "usage": "Для салатов, супов-пюре, каш, тушёных овощей. Добавляйте в готовые блюда.",
+      "country": null,
+      "photos": [
+        "photos/pumpkin-1.webp",
+        "photos/pumpkin-2.webp",
+        "photos/pumpkin-hemp.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "hemp",
+      "name": "Масло конопляное",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 1800 }
+      ],
+      "description": "Сыродавленное, отжато на дубовом прессе. Травяно-ореховый вкус.",
+      "details": "Масло из семян конопли первого холодного отжима, отжато на дубовом прессе. Зеленоватый цвет, травяно-ореховый вкус.",
+      "usage": "Для салатов, каш, соусов и заправок. Не нагревать.",
+      "country": null,
+      "photos": [
+        "photos/hemp-1.webp",
+        "photos/pumpkin-hemp.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "walnut",
+      "name": "Масло грецкого ореха",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 1100 },
+        { "size": "500 мл", "price": null }
+      ],
+      "description": "Сыродавленное масло с выраженным ореховым вкусом.",
+      "details": "Масло из ядер грецкого ореха, полученное холодным отжимом. Выраженный ореховый вкус и аромат.",
+      "usage": "Для салатов, соусов, выпечки и десертов.",
+      "country": null,
+      "photos": [
+        "photos/walnut-1.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "black-sesame",
+      "name": "Масло чёрного кунжута",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 900 }
+      ],
+      "description": "Сыродавленное масло с ярким кунжутным вкусом.",
+      "details": "Масло из семян чёрного кунжута, полученное холодным отжимом. Яркий кунжутный вкус и аромат.",
+      "usage": "Для азиатских блюд, салатов, маринадов и соусов.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "white-sesame",
+      "name": "Масло белого кунжута",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 900 }
+      ],
+      "description": "Сыродавленное масло с мягким кунжутным вкусом.",
+      "details": "Масло из семян белого кунжута, полученное холодным отжимом. Мягкий кунжутный вкус.",
+      "usage": "Для салатов, соусов и азиатских блюд. Используется в уходе за кожей.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "apricot-kernel",
+      "name": "Масло абрикосовой косточки",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 1400 }
+      ],
+      "description": "Сыродавленное масло с лёгким миндальным ароматом.",
+      "details": "Масло из ядер абрикосовых косточек, полученное холодным отжимом. Лёгкая текстура и тонкий миндальный аромат.",
+      "usage": "В уходе за кожей и волосами, для массажа. В кулинарии — для десертов и салатов.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "mustard",
+      "name": "Масло горчичное",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 700 }
+      ],
+      "description": "Сыродавленное масло с пикантным вкусом.",
+      "details": "Масло из семян горчицы, полученное холодным отжимом. Пикантный, слегка острый вкус.",
+      "usage": "Для салатов, выпечки, домашних заготовок и маринадов.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "linseed",
+      "name": "Масло льняное",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 650 }
+      ],
+      "description": "Сыродавленное масло с характерной лёгкой горчинкой.",
+      "details": "Масло из семян льна, полученное холодным отжимом. Характерный вкус с лёгкой горчинкой.",
+      "usage": "Для каш, творога, салатов и винегретов. Не нагревать, хранить в холодильнике.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "sunflower",
+      "name": "Масло подсолнечное",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 500 }
+      ],
+      "description": "Сыродавленное масло с ярким ароматом семечек.",
+      "details": "Нерафинированное масло из семян подсолнечника, полученное холодным отжимом. Яркий аромат семечек.",
+      "usage": "Для салатов, винегретов, заправки готовых блюд.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "sea-buckthorn",
+      "name": "Масло облепиховое",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 8300 }
+      ],
+      "description": "Насыщенный оранжевый цвет и ягодный аромат.",
+      "details": "Масло облепихи насыщенного оранжевого цвета с кисловатым ягодным ароматом.",
+      "usage": "В уходе за кожей и в домашней косметике. В кулинарии — понемногу в салаты и каши.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "amaranth",
+      "name": "Масло амарантовое",
+      "brand": "HASAN oil",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 24800 }
+      ],
+      "description": "Сыродавленное масло из семян амаранта.",
+      "details": "Масло из семян амаранта, полученное холодным отжимом. Мягкий ореховый вкус.",
+      "usage": "Для салатов и каш, в готовые блюда. Используется в уходе за кожей.",
+      "country": null,
+      "photos": [],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "coconut-baraka",
+      "name": "Масло кокосовое нерафинированное",
+      "brand": "Baraka",
+      "category": "cold-pressed",
+      "volumes": [
+        { "size": "250 мл", "price": 1000 }
+      ],
+      "description": "Первый холодный отжим, пищевое и косметическое. Шри-Ланка.",
+      "details": "100% нерафинированное кокосовое масло первого холодного отжима. Приятный кокосовый аромат. Пищевое и косметическое. Произведено в Шри-Ланке.",
+      "usage": "Для жарки и выпечки. Для ухода за кожей лица и тела, волосами и кутикулой, для массажа.",
+      "country": "Шри-Ланка",
+      "photos": [
+        "photos/coconut-1.webp",
+        "photos/coconut-2.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "apple-vinegar",
+      "name": "Яблочный уксус",
+      "brand": "HASAN oil",
+      "category": "vinegar",
+      "volumes": [
+        { "size": null, "price": null }
+      ],
+      "description": "100% натуральный, из домашних яблок.",
+      "details": "Натуральный яблочный уксус из домашних яблок. Без добавок.",
+      "usage": "Для салатных заправок, маринадов, соусов и домашних заготовок.",
+      "country": null,
+      "photos": [
+        "photos/apple-vinegar-1.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "balsamic-mas-tarres",
+      "name": "Бальзамический соус «Mas Tarrés»",
+      "brand": "Olis Solé",
+      "category": "vinegar",
+      "volumes": [
+        { "size": "250 мл", "price": null }
+      ],
+      "description": "Соус на основе бальзамического уксуса, сорт Trebbiano. Италия.",
+      "details": "Бальзамический соус на основе бальзамического уксуса из винограда сорта Trebbiano. Произведено в Италии для Olis Solé.",
+      "usage": "Для салатов, сыров, мяса, овощей на гриле и десертов.",
+      "country": "Италия",
+      "photos": [
+        "photos/balsamic-mas-tarres-1.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "soap-kadah",
+      "name": "Алеппское мыло Aleppo Gold",
+      "brand": "KADAH",
+      "category": "soap",
+      "volumes": [
+        { "size": null, "price": null }
+      ],
+      "description": "Оливковое масло + 20% лаврового масла. Сирия.",
+      "details": "Традиционное алеппское мыло на основе оливкового масла с добавлением 20% лаврового масла. Натуральный состав, мягкая пена. Производство — Сирия.",
+      "usage": "Для лица, тела и волос.",
+      "country": "Сирия",
+      "photos": [
+        "photos/soap-kadah-1.webp",
+        "photos/soap-kadah-2.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "soap-aleppo",
+      "name": "Алеппское мыло (без упаковки)",
+      "brand": null,
+      "category": "soap",
+      "volumes": [
+        { "size": null, "price": null }
+      ],
+      "description": "На оливковом масле с добавлением лаврового масла.",
+      "details": "Алеппское мыло на основе оливкового масла с добавлением лаврового масла. Продаётся без упаковки.",
+      "usage": "Для лица, тела и волос.",
+      "country": null,
+      "photos": [
+        "photos/soap-aleppo-1.webp"
+      ],
+      "available": true,
+      "featured": false
+    },
+
+    {
+      "id": "psyllium-hashmi",
+      "name": "Псиллиум (шелуха подорожника)",
+      "brand": "Hashmi",
+      "category": "health",
+      "volumes": [
+        { "size": "банка 140 г", "price": null },
+        { "size": "пакет 260 г", "price": null }
+      ],
+      "description": "Шелуха семян подорожника. Нейтральный вкус.",
+      "details": "Псиллиум — шелуха семян подорожника. Нейтральный вкус, в жидкости набухает и превращается в гель.",
+      "usage": "Добавляйте в смузи, йогурт, кефир, каши. Используется как загуститель в выпечке без глютена.",
+      "country": null,
+      "photos": [
+        "photos/psyllium-1.webp",
+        "photos/psyllium-2.webp"
+      ],
+      "available": true,
+      "featured": false
+    }
+
+  ]
+}
