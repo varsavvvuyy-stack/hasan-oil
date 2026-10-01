@@ -523,6 +523,27 @@
       ],
       "available": true,
       "featured": false
+    },
+
+    {
+      "id": "saudi-dates",
+      "name": "Финики саудовские",
+      "brand": null,
+      "category": "health",
+      "volumes": [
+        { "size": null, "price": null }
+      ],
+      "description": "Натуральные финики из Саудовской Аравии.",
+      "details": "Натуральные финики из Саудовской Аравии. Сорт, фасовку и вес уточняйте в WhatsApp.",
+      "usage": "К чаю и кофе, в каши, смузи, выпечку и десерты.",
+      "country": "Саудовская Аравия",
+      "photos": [
+        "photos/dates-1.webp",
+        "photos/dates-2.webp",
+        "photos/dates-3.webp"
+      ],
+      "available": true,
+      "featured": false
     }
 
   ]
