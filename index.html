@@ -34,11 +34,6 @@
 
   <!-- ===== 1. Шапка + первый экран ===== -->
   <header class="hero">
-    <picture class="hero__bg">
-      <source media="(max-width: 700px)" srcset="photos/hero-sm.webp">
-      <img src="photos/hero.webp" alt="Масло чёрного тмина HASAN oil на фоне гор Кавказа" fetchpriority="high">
-    </picture>
-
     <div class="topbar container">
       <a class="topbar__logo" href="./" aria-label="HASAN oil — на главную">
         <img src="assets/logo-dark.svg" alt="HASAN oil" width="150" height="58">
@@ -52,6 +47,13 @@
           <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg><span>Instagram</span>
         </a>
       </nav>
+    </div>
+
+    <div class="hero__media">
+      <picture class="hero__bg">
+        <source media="(max-width: 700px)" srcset="photos/hero-sm.webp">
+        <img src="photos/hero.webp" width="1983" height="793" alt="Оливковое масло HASAN oil на фоне гор и оливковых деревьев" fetchpriority="high">
+      </picture>
     </div>
 
     <div class="hero__content container">

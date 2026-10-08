@@ -87,31 +87,34 @@ svg { flex-shrink: 0; }
 .pill:hover { background: rgba(250, 247, 240, .26); }
 .pill svg { width: 18px; height: 18px; }
 
-/* ---------- 1. Шапка + первый экран ---------- */
+/* ---------- 1. Шапка + первый экран ----------
+   Широкое фото показывается полосой с шапкой поверх, текст — под ним на оливковом фоне. */
 .hero {
   position: relative;
-  min-height: min(78svh, 600px);
-  display: flex; flex-direction: column; justify-content: space-between;
   color: #fff;
+  background: radial-gradient(120% 140% at 0% 0%, #46522f 0%, var(--olive-dark) 65%);
+}
+.hero__media {
+  position: relative;
+  height: clamp(240px, 68vw, 420px);
   background: var(--olive-dark);
   isolation: isolate;
 }
 .hero__bg, .hero__bg img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 30%;
+  object-fit: cover; object-position: 48% 50%;
   z-index: -2;
 }
-.hero::after {
+.hero__media::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(180deg, rgba(25, 22, 18, .55) 0%, rgba(25, 22, 18, 0) 28%),
-    linear-gradient(0deg, rgba(25, 22, 18, .9) 0%, rgba(25, 22, 18, .72) 30%, rgba(25, 22, 18, .2) 58%, rgba(25, 22, 18, 0) 75%);
+    linear-gradient(0deg, rgba(47, 56, 32, .55) 0%, rgba(47, 56, 32, 0) 22%);
 }
 
 .topbar {
   display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  padding-top: max(14px, env(safe-area-inset-top));
+  padding-top: max(12px, env(safe-area-inset-top)); padding-bottom: 12px;
 }
 .topbar__logo { display: flex; flex-direction: column; text-decoration: none; }
 .topbar__logo img { width: 116px; height: auto; }
@@ -124,7 +127,7 @@ svg { flex-shrink: 0; }
 .topbar__links .pill span { display: none; }
 .topbar__links .pill { width: 38px; height: 38px; padding: 0; justify-content: center; }
 
-.hero__content { padding-bottom: 28px; }
+.hero__content { padding-top: 22px; padding-bottom: 28px; }
 .hero__title {
   font: 600 32px/1.05 var(--serif);
   margin: 0 0 10px; max-width: 14em;
@@ -417,7 +420,6 @@ svg { flex-shrink: 0; }
 }
 @media (min-width: 900px) {
   .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .hero { min-height: 620px; }
   .hero__title { font-size: 58px; }
   .topbar__logo img { width: 150px; }
   .section-title { font-size: 40px; }
@@ -428,15 +430,20 @@ svg { flex-shrink: 0; }
   .modal__content { padding: 28px 28px 30px; align-content: start; }
   .modal__close { margin-bottom: -50px; }
 }
-/* На широком экране фото первого экрана — справа, текст — слева на оливковом фоне */
+/* На широком экране фото — во всю ширину в исходных пропорциях, текст — в две колонки */
 @media (min-width: 900px) {
-  .hero { background: radial-gradient(120% 120% at 0% 0%, #46522f 0%, var(--olive-dark) 60%); }
-  .hero__bg { left: auto; width: 46%; }
-  .hero::after {
-    left: auto; width: 46%;
-    background: linear-gradient(90deg, var(--olive-dark) 0%, rgba(47, 56, 32, 0) 30%),
-                linear-gradient(180deg, rgba(25, 22, 18, .45) 0%, rgba(25, 22, 18, 0) 25%);
+  .hero__media { height: auto; aspect-ratio: 1983 / 793; max-height: 640px; }
+  .topbar { position: absolute; top: 0; left: 0; right: 0; z-index: 2; padding-top: 18px; }
+  .hero__media::after {
+    background:
+      linear-gradient(180deg, rgba(25, 22, 18, .55) 0%, rgba(25, 22, 18, 0) 26%),
+      linear-gradient(0deg, rgba(47, 56, 32, .55) 0%, rgba(47, 56, 32, 0) 22%);
   }
-  .hero__content { padding-bottom: 72px; }
-  .hero__title { max-width: 11em; }
+  .hero__content {
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 12px 48px; align-items: end;
+    padding-top: 40px; padding-bottom: 48px;
+  }
+  .hero__title { grid-row: span 2; margin: 0; max-width: 12em; }
+  .hero__text { margin: 0; }
+  .hero__content .btn { justify-self: start; }
 }
