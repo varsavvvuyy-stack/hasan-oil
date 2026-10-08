@@ -100,7 +100,7 @@
       '<div class="card__body">' +
         (p.brand ? '<span class="card__brand">' + esc(p.brand) + '</span>' : '') +
         '<h3 class="card__name">' + esc(p.name) + '</h3>' +
-        (p.description ? '<p class="card__desc">' + esc(p.description) + '</p>' : '') +
+        (p.short ? '<p class="card__desc">' + esc(p.short) + '</p>' : '') +
         pricesHtml(p, true) +
       '</div>' +
     '</article>';
@@ -175,6 +175,31 @@
 
   /* ---------- модальное окно ---------- */
 
+  // Разделы описания товара: поле в products.json → подзаголовок. Пустые поля не выводятся.
+  var SECTIONS = [
+    ['description', 'Описание'],
+    ['composition', 'Чем ценно'],
+    ['usage', 'Как применять'],
+    ['how_to_choose', 'Как выбрать'],
+    ['storage', 'Хранение'],
+    ['caution', 'С осторожностью']
+  ];
+
+  // Перенос строки внутри поля = новый абзац
+  function paragraphs(text) {
+    return String(text).split(/\n+/).filter(Boolean).map(function (t) {
+      return '<p>' + esc(t.trim()) + '</p>';
+    }).join('');
+  }
+
+  function sectionsHtml(p) {
+    return SECTIONS.map(function (s) {
+      if (!p[s[0]]) return '';
+      return '<section class="pinfo pinfo--' + s[0].replace(/_/g, '-') + '">' +
+        '<h3>' + s[1] + '</h3>' + paragraphs(p[s[0]]) + '</section>';
+    }).join('');
+  }
+
   function modalHtml(p) {
     var photos = p.photos || [];
     var gallery;
@@ -203,8 +228,7 @@
         '<h2 class="modal__title" id="modal-title">' + esc(p.name) + '</h2>' +
         (badges ? '<div class="modal__badges">' + badges + '</div>' : '') +
         pricesHtml(p, false) +
-        (p.details || p.description ? '<div><h3>Описание</h3><p>' + esc(p.details || p.description) + '</p></div>' : '') +
-        (p.usage ? '<div><h3>Применение</h3><p>' + esc(p.usage) + '</p></div>' : '') +
+        sectionsHtml(p) +
         (p.note ? '<p class="modal__note">' + esc(p.note) + '</p>' : '') +
         '<p class="modal__meta">' + meta.join('<br>') + '</p>' +
         '<a class="btn btn--wa" href="' + waLink(WA_TEXT + ': ' + p.name) + '" target="_blank" rel="noopener">' +

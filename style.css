@@ -147,20 +147,48 @@ svg { flex-shrink: 0; }
 .benefits { margin-top: 20px; }
 .benefits__list {
   list-style: none; margin: 0; padding: 0;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  display: grid; grid-template-columns: 1fr; gap: 10px;
 }
 .benefit {
-  display: flex; flex-direction: column; gap: 8px;
-  padding: 14px 12px;
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 14px 14px;
   background: var(--beige);
   border-radius: var(--radius);
-  font-size: 13px; line-height: 1.35; font-weight: 500;
+  font-size: 14px; line-height: 1.45; color: var(--brown-soft);
 }
+.benefit p { margin: 0; }
+.benefit b { display: block; color: var(--brown); font-weight: 600; margin-bottom: 2px; }
 .benefit svg {
-  width: 28px; height: 28px;
+  width: 28px; height: 28px; margin-top: 1px;
   fill: none; stroke: var(--gold); stroke-width: 1.5;
   stroke-linecap: round; stroke-linejoin: round;
 }
+
+/* ---------- Как выбрать натуральное масло ----------
+   На телефоне — горизонтальная лента карточек (компактно по высоте), на десктопе — сетка. */
+.tips { margin-top: 36px; }
+.tips__title { font: 600 26px/1.15 var(--serif); margin: 0 0 12px; text-wrap: balance; }
+.tips__list {
+  list-style: none; margin: 0; padding: 0 var(--gutter) 6px;
+  display: flex; gap: 10px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+  scroll-padding: 0 var(--gutter);
+  counter-reset: tip;
+}
+.tips__list::-webkit-scrollbar { display: none; }
+.tip {
+  flex: 0 0 78%; scroll-snap-align: start;
+  counter-increment: tip;
+  padding: 14px 14px 16px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  font-size: 14px; line-height: 1.45; color: var(--brown-soft);
+}
+.tip::before {
+  content: counter(tip);
+  display: block; margin-bottom: 4px;
+  font: 600 26px/1 var(--serif); color: var(--gold);
+}
+.tip b { display: block; color: var(--brown); font-weight: 600; margin-bottom: 4px; }
 
 /* ---------- 3. Каталог ---------- */
 .catalog { margin-top: 40px; }
@@ -302,6 +330,9 @@ svg { flex-shrink: 0; }
   padding: 18px;
 }
 .info__card p { margin: 0; }
+.info__card p + p { margin-top: 12px; }
+.info__list { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+.info__list li::marker { color: var(--gold); }
 .info__card a { color: var(--olive); font-weight: 600; }
 
 /* ---------- 7. Подвал ---------- */
@@ -381,8 +412,8 @@ svg { flex-shrink: 0; }
 }
 .gallery__dots span.is-active { background: var(--gold); }
 
-.modal__content { padding: 18px var(--gutter) calc(24px + env(safe-area-inset-bottom)); display: grid; gap: 14px; }
-.modal__brand { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin: 0 0 -10px; }
+.modal__content { padding: 18px var(--gutter) calc(24px + env(safe-area-inset-bottom)); display: grid; gap: 18px; }
+.modal__brand { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin: 0 0 -12px; }
 .modal__title { font: 600 28px/1.1 var(--serif); margin: 0; padding-right: 8px; hyphens: auto; overflow-wrap: break-word; }
 .modal__badges { display: flex; gap: 6px; flex-wrap: wrap; }
 .modal__badges .badge, .modal__badges .soldout { position: static; border-radius: 999px; padding: 3px 10px; }
@@ -395,8 +426,17 @@ svg { flex-shrink: 0; }
 .modal .prices li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; }
 .modal .prices li + li { border-top: 1px solid var(--line); margin: 0; }
 
-.modal h3 { font: 600 19px/1.2 var(--serif); margin: 0 0 4px; }
+.modal h3 { font: 600 20px/1.2 var(--serif); margin: 0 0 6px; }
 .modal p { margin: 0; }
+/* разделы описания товара */
+.pinfo { font-size: 15px; line-height: 1.6; }
+.pinfo p + p { margin-top: 10px; }
+.pinfo--caution {
+  padding: 12px 14px 14px;
+  background: var(--beige); border-radius: 12px;
+  font-size: 14px; line-height: 1.55; color: var(--brown-soft);
+}
+.pinfo--caution h3 { font-size: 18px; color: var(--brown); }
 .modal__note {
   padding: 10px 12px; border-radius: 10px;
   background: var(--sand); font-size: 13.5px; font-weight: 500;
@@ -408,7 +448,9 @@ svg { flex-shrink: 0; }
 /* ---------- Планшеты и десктоп ---------- */
 @media (min-width: 640px) {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-  .benefits__list { grid-template-columns: repeat(4, 1fr); }
+  .benefits__list { grid-template-columns: repeat(2, 1fr); }
+  .tip { flex-basis: 44%; }
+  .tips__title { font-size: 32px; }
   .hero__title { font-size: 46px; }
   .hero__text { font-size: 17px; }
   .search { max-width: 420px; }
@@ -423,11 +465,20 @@ svg { flex-shrink: 0; }
   .hero__title { font-size: 58px; }
   .topbar__logo img { width: 150px; }
   .section-title { font-size: 40px; }
-  .modal__body { display: grid; grid-template-columns: 1fr 1fr; }
-  .gallery__slide { max-height: none; height: 100%; }
-  .gallery, .gallery__track { height: 100%; }
+  /* фото слева «прилипает» сверху, текст справа прокручивается */
+  .modal__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+  .gallery { position: sticky; top: 0; height: min(88vh, 760px); }
+  .gallery__track { height: 100%; }
+  .gallery__slide { aspect-ratio: auto; max-height: none; height: 100%; }
   .modal__box { max-height: 88vh; }
   .modal__content { padding: 28px 28px 30px; align-content: start; }
+  .benefits__list { grid-template-columns: repeat(4, 1fr); }
+  .benefit { flex-direction: column; gap: 10px; }
+  .tips__list {
+    display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); overflow: visible;
+    max-width: 1160px; margin: 0 auto; padding: 0 var(--gutter);
+  }
+  .tip { padding: 16px; }
   .modal__close { margin-bottom: -50px; }
 }
 /* На широком экране фото — во всю ширину в исходных пропорциях, текст — в две колонки */
