@@ -112,7 +112,9 @@
       "details": "Масло чёрного тмина из эфиопских семян. Пряный вкус с характерной горчинкой.",
       "usage": "Добавляйте в салаты, соусы и заправки, к хлебу и мёду. Не подходит для жарки. Используется в уходе за кожей и волосами.",
       "country": null,
-      "photos": [],
+      "photos": [
+        "photos/cumin-ethiopia-1.webp"
+      ],
       "available": true,
       "featured": false
     },
@@ -150,7 +152,7 @@
       "usage": "Добавляйте в салаты, соусы и заправки. Не подходит для жарки. Используется в уходе за кожей и волосами.",
       "country": null,
       "photos": [
-        "photos/cumin-quran-1.webp"
+        "photos/cumin-quran-2.webp"
       ],
       "available": true,
       "featured": false
@@ -188,7 +190,9 @@
       "details": "Масло из семян расторопши, полученное холодным отжимом. Мягкий травянистый вкус и аромат.",
       "usage": "Для заправки салатов и каш, в готовые блюда. Не нагревать.",
       "country": null,
-      "photos": [],
+      "photos": [
+        "photos/milk-thistle-1.webp"
+      ],
       "available": true,
       "featured": false
     },
@@ -240,9 +244,7 @@
       "usage": "Для салатов, супов-пюре, каш, тушёных овощей. Добавляйте в готовые блюда.",
       "country": null,
       "photos": [
-        "photos/pumpkin-1.webp",
-        "photos/pumpkin-2.webp",
-        "photos/pumpkin-hemp.webp"
+        "photos/pumpkin-3.webp"
       ],
       "available": true,
       "featured": false
@@ -282,7 +284,7 @@
       "usage": "Для салатов, соусов, выпечки и десертов.",
       "country": null,
       "photos": [
-        "photos/walnut-1.webp"
+        "photos/walnut-2.webp"
       ],
       "available": true,
       "featured": false
@@ -317,7 +319,9 @@
       "details": "Масло из семян белого кунжута, полученное холодным отжимом. Мягкий кунжутный вкус.",
       "usage": "Для салатов, соусов и азиатских блюд. Используется в уходе за кожей.",
       "country": null,
-      "photos": [],
+      "photos": [
+        "photos/white-sesame-1.webp"
+      ],
       "available": true,
       "featured": false
     },
@@ -426,13 +430,13 @@
 
     {
       "id": "coconut-baraka",
-      "name": "Масло кокосовое нерафинированное",
+      "name": "Масло кокосовое",
       "brand": "Baraka",
       "category": "cold-pressed",
       "volumes": [
         { "size": "250 мл", "price": 750 }
       ],
-      "description": "Первый холодный отжим, пищевое и косметическое. Шри-Ланка.",
+      "description": "Нерафинированное, первый холодный отжим. Пищевое и косметическое.",
       "details": "100% нерафинированное кокосовое масло первого холодного отжима. Приятный кокосовый аромат. Пищевое и косметическое. Произведено в Шри-Ланке.",
       "usage": "Для жарки и выпечки. Для ухода за кожей лица и тела, волосами и кутикулой, для массажа.",
       "country": "Шри-Ланка",
@@ -457,7 +461,7 @@
       "usage": "Для салатных заправок, маринадов, соусов и домашних заготовок.",
       "country": null,
       "photos": [
-        "photos/apple-vinegar-1.webp"
+        "photos/apple-vinegar-2.webp"
       ],
       "available": true,
       "featured": false
